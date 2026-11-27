@@ -1,0 +1,12 @@
+.env
+*.env
+!*.env.example
+migrate-report-*.csv
+validation-report-*.csv
+*.bak-*
+mapping.json
+__pycache__/
+*.pyc
+.venv/
+kiwi-id-column*.txt
+ket-qua/

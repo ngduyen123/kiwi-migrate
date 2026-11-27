@@ -1,0 +1,63 @@
+{
+  "sheet": "TestCases",
+  "header_row": 1,
+  "continuation_rows": true,
+
+  "columns": {
+    "id": "TC ID",
+    "summary": "Title",
+    "precondition": "Precondition",
+    "steps": "Steps",
+    "expected": "Expected Result",
+    "test_data": "Test Data",
+    "priority": "Priority",
+    "category": "Module",
+    "status": "Status",
+    "tags": "Tags",
+    "component": "Component",
+    "is_automated": "Automated",
+    "requirement": "Requirement",
+    "notes": "Notes"
+  },
+
+  "defaults": {
+    "product": "",
+    "category": "--default--",
+    "priority": "Medium",
+    "status": "CONFIRMED"
+  },
+
+  "priority_map": {
+    "Critical": "High",
+    "High": "High",
+    "Cao": "High",
+    "Medium": "Medium",
+    "Trung bình": "Medium",
+    "Low": "Low",
+    "Thấp": "Low"
+  },
+
+  "priority_ids": {
+    "High": 6,
+    "Medium": 7,
+    "Low": 8
+  },
+
+  "status_map": {
+    "Draft": "PROPOSED",
+    "Ready": "CONFIRMED",
+    "Done": "CONFIRMED"
+  },
+
+  "extra_tags": ["migrated"],
+  "test_plan_id": null,
+  "required_fields": ["summary", "steps", "expected"],
+  "on_existing": "skip",
+  "on_existing_other": "create",
+  "status_on_update": "NEED_UPDATE",
+  "on_removed": "disable",
+  "rename_similarity": 0.8,
+  "annotate_notes": true,
+  "create_missing_category": true,
+  "verify_ssl": true
+}

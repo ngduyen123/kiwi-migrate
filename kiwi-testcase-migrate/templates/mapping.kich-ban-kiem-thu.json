@@ -1,0 +1,64 @@
+{
+  "_mo_ta": "Mẫu 'Kịch bản kiểm thử' UpBase: tiêu đề ở dòng 9 (gộp 2 dòng 9-10), dòng 'I. Check ...' là tiêu đề nhóm, cột Mục đích kiểm thử có thể gộp cho nhiều case.",
+  "header_row": 9,
+  "sub_header_row": 10,
+  "continuation_rows": true,
+  "id_required": true,
+  "category_from_section": true,
+  "category_prefix": "{tab}>",
+  "disambiguate_shared_summary": true,
+
+  "columns": {
+    "id": "Mã trường hợp kiểm thử",
+    "summary": "Mục đích kiểm thử",
+    "precondition": "Tiền điều kiện",
+    "steps": "Các bước thực hiện",
+    "expected": "Kết quả mong muốn",
+    "priority": "Mức độ",
+    "notes": "Ghi chú"
+  },
+
+  "defaults": {
+    "product": "",
+    "category": "--default--",
+    "priority": "Medium",
+    "status": "CONFIRMED"
+  },
+
+  "priority_map": {
+    "Critical": "High",
+    "High": "High",
+    "Cao": "High",
+    "Medium": "Medium",
+    "Trung bình": "Medium",
+    "Low": "Low",
+    "Thấp": "Low"
+  },
+
+  "priority_ids": {
+    "High": 6,
+    "Medium": 7,
+    "Low": 8
+  },
+
+  "status_map": {},
+
+  "results": {
+    "enabled": true,
+    "column_pattern": "^.+ / Lần \\d+$",
+    "run_name": "{tab} – {column}",
+    "status_map": {"P": "PASSED", "F": "FAILED", "PE": "PAUSED"},
+    "comment_columns": ["Kết quả hiện tại", "Mã lỗi"]
+  },
+  "extra_tags": [],
+  "test_plan_id": null,
+  "required_fields": ["summary", "steps", "expected"],
+  "on_existing": "skip",
+  "on_existing_other": "create",
+  "status_on_update": "NEED_UPDATE",
+  "on_removed": "disable",
+  "rename_similarity": 0.8,
+  "annotate_notes": true,
+  "create_missing_category": true,
+  "verify_ssl": true
+}

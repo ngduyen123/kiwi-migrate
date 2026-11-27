@@ -1,0 +1,6 @@
+TC ID,Module,Title,Precondition,Steps,Expected Result,Test Data,Priority,Status,Tags,Component,Automated,Requirement,Notes
+TC-001,Login,Đăng nhập thành công,Đã có tài khoản hợp lệ,Mở trang login,Hiển thị form đăng nhập,,High,Ready,smoke;login,,no,STORY-12,
+,,,,Nhập username/password đúng rồi bấm Đăng nhập,Chuyển tới trang Dashboard,user01 / P@ss,,,,,,,
+TC-002,Login,Đăng nhập sai mật khẩu,Đã có tài khoản hợp lệ,"1. Mở trang login
+2. Nhập mật khẩu sai
+3. Bấm Đăng nhập",Hiển thị thông báo 'Sai tài khoản hoặc mật khẩu',,Medium,Draft,login,,no,STORY-12,
